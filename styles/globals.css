@@ -39,6 +39,7 @@ a {
   --clr3: #035283;
   --clr4: #0b8de3;
   --clr5: #9ca49a;
+  --clr9: rgb(248, 129, 129);
   --clr10: white;
 }
 
@@ -158,4 +159,12 @@ a {
   right: 0;
   display: flex;
   margin: 30px;
+}
+
+.logospace {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100px;
 }

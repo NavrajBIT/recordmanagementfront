@@ -196,3 +196,17 @@
   color: var(--clr9);
   align-self: center;
 }
+
+.formpreview {
+  position: fixed;
+  top: 100px;
+  left: 30vw;
+  background-color: white;
+  border: 1px solid var(--clr1);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.formpreview button {
+  width: 100%;
+}

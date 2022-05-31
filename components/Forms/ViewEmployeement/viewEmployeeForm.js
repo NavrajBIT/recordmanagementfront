@@ -1,4 +1,4 @@
-import { viewEmployeeFormData } from "../../viewformData";
+import { viewEmployeeFormData } from "../../../viewformData";
 
 const ViewEmployee = () => {
     return(

@@ -162,6 +162,19 @@
   color: var(--clr5);
   align-items: center;
 }
+.radioSelection{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.radioInput{
+  width: max-content;
+  color: white;
+  padding-right: 50px;
+}
+.radioInput input{
+  margin: 0 5px 0 0;
+}
 /* .myform .formelement input::-webkit-calendar-picker-indicator {
   filter: invert(0.8);
 } */

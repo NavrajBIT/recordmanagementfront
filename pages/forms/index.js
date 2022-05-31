@@ -1,10 +1,15 @@
 import AddEmployeeForm from "./addEmployeeForm";
+import ViewEmployeeForm from "./viewEmployeeForm";
+import EmployeeAtendence from "./employeeAtendence";
+import ContactUs from "./contactUs";
 import { createContext, useContext } from "react";
 import AppContext from "../AppContext";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { addEmployeeFormData } from "../../formdata";
 
 export default function Home() {
+  const [activeLink, setActiveLink] = useState("addEmployee");
   const userState = useContext(AppContext);
   const router = useRouter();
   useEffect(() => {
@@ -46,10 +51,10 @@ export default function Home() {
       <>
         <div className="sidebar">
           <h1>Dashboard</h1>
-          <div className="sidebar-item">Add Employee</div>
-          <div className="sidebar-item">View Employee</div>
-          <div className="sidebar-item">Employee Attendence</div>
-          <div className="sidebar-item">Contact Us</div>
+          <div className="sidebar-item" onClick={() => setActiveLink("addEmployee")}>Add Employee</div>
+          <div className="sidebar-item" onClick={() => setActiveLink("viewEmployee")}>View Employee</div>
+          <div className="sidebar-item" onClick={() => setActiveLink("employeeatendence")}>Employee Attendence</div>
+          <div className="sidebar-item" onClick={() => setActiveLink("contactus")}>Contact Us</div>
         </div>
       </>
     );
@@ -60,7 +65,10 @@ export default function Home() {
       <Navbar />
       <div className="formbody">
         <Sidebar />
-        <AddEmployeeForm />
+        {activeLink === "addEmployee" && <AddEmployeeForm />}
+        {activeLink === "viewEmployee" && <ViewEmployeeForm />}
+        {activeLink === "employeeatendence" && <EmployeeAtendence />}
+        {activeLink === "contactus" && <ContactUs />}
       </div>
     </>
   );

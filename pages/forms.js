@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
-import Option from "../components/DashOption";
 import AddEmployeeForm from "../components/Forms/AddEmployee/addEmployeeForm";
 import ViewEmployeeForm from "../components/Forms/ViewEmployeement/viewEmployeeForm";
 import EmployeeAtendence from "../components/Forms/EmployeeAtandence/employeeAtendence";
@@ -14,10 +13,10 @@ const Form = () => {
       <div className="formbody">
         <div className="sidebar">
           <h1>Dashboard</h1>
-          <Option title={"Add Employee"} onClick={() => setActiveLink("addEmployee")}/>
-          <Option title={"View Employee"} onClick={() => setActiveLink("viewEmployee")}/>
-          <Option title={"Employee"} onClick={() => setActiveLink("employeeatendence")}/>
-          <Option title={"Contact Us"} onClick={() => setActiveLink("contactus")}/>
+          <div className="sidebar-item" onClick={() => setActiveLink("addEmployee")}>Add Employee</div>
+          <div className="sidebar-item" onClick={() => setActiveLink("viewEmployee")}>View Employee</div>
+          <div className="sidebar-item" onClick={() => setActiveLink("employeeatendence")}>Employee Atendence</div>
+          <div className="sidebar-item" onClick={() => setActiveLink("contactus")}>Contact Us</div>
         </div>        
         {activeLink === "addEmployee" && <AddEmployeeForm />}
         {activeLink === "viewEmployee" && <ViewEmployeeForm />}

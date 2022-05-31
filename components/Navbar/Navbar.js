@@ -1,4 +1,9 @@
+import { useContext } from 'react';
+import Router from 'next/router';
+import userContext from '../../context/User/userContext';
+
 const Navbar = () => {
+  const user = useContext(userContext); 
   return (
     <>
       <div className="navbar">
@@ -11,12 +16,12 @@ const Navbar = () => {
           />
         </div>
         <div className="navbar-right">
+          {user.userName}
           <div style={{ margin: "0px 20px" }}>
             <button
-              onClick={() => {
-                router.push("/");
-              }}
-            >
+            onClick={() => {
+              Router.push("/");
+            }}>
               Logout
             </button>
           </div>

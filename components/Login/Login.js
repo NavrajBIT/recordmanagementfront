@@ -1,6 +1,10 @@
+import { useContext, useState } from 'react';
 import Router from "next/router";
+import userContext from '../../context/User/userContext';
 
 const Login = () => {
+    const [name, setName] = useState("_No_Name_");
+    const user = useContext(userContext); 
 return(
         <>
             <div className="logo">
@@ -27,6 +31,9 @@ return(
                         placeholder="Your username"
                         style={{ backgroundImage: "url('./username.svg')" }}
                         id="userName"
+                        onChange={(e) => {
+                            setName(e.target.value);
+                        }}
                         />
                     </div>
                     <div className="inputField">
@@ -37,7 +44,7 @@ return(
                         <input type="checkbox" placeholder="Your Password" /> Remember me
                     </div>
                     <button onClick={(e) => {
-                        // e.preventDefault();
+                        user.updateName(name);
                         Router.push("/forms");
                     }}>Login</button>
                 </div>

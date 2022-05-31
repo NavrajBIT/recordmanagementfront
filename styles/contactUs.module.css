@@ -1,0 +1,88 @@
+
+
+.contactUs{
+   
+   
+    background:white;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    font-family: "Space Grotesk", sans-serif;
+
+
+
+}
+
+/* .contactUs div{
+    border:  2px solid black;
+} */
+
+.headingBlock input{
+    font-family: "Space Grotesk", sans-serif;
+
+    width: 500px;
+}
+
+.contactUs label{
+    margin: 10px 50px;
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-family: "Space Grotesk", sans-serif;
+
+    
+    /* border: 2px solid black; */
+}
+
+
+
+.descriptionBlock textarea{
+    vertical-align: top;
+    font-family: "Space Grotesk", sans-serif;
+    
+    width: 500px; 
+    resize:none;
+    display: inline-block;
+
+}
+
+.contactUs button{
+    width: 500px;
+    background-color: rgb(122, 191, 18);
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    
+    margin-left: 250px;
+    font-weight: 600;
+    color: white;
+}
+
+.heading{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 80px;
+    background:rgb(122, 191, 18);
+    position: relative;
+    font-family: "Space Grotesk", sans-serif;
+
+}
+
+.heading h2{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    cursor: pointer;
+    font-family: "Space Grotesk", sans-serif;
+
+}
+
+
+.contactInfo{
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+
+}

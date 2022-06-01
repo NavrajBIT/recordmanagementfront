@@ -1,7 +1,9 @@
-import { useState } from "react";
-import styles from "../../../styles/contactUs.module.css";
+import React, { useState } from "react";
 
-const ContactUs = () => {
+import styles from "../../../styles/contactUs.module.css";
+// import Navbar from "./Navbar";
+
+const contactUs = () => {
   const [info, setinfo] = useState({
     heading: "",
     description: "",
@@ -14,10 +16,12 @@ const ContactUs = () => {
     setinfo({ ...info, [name]: value });
   };
 
-
   return (
     <>
       <div className={styles.contactUs}>
+        {/* <div className="navbar">
+          <Navbar/>
+        </div> */}
         <div className={styles.heading}>
           <h2>Contact Us</h2>
         </div>
@@ -33,6 +37,7 @@ const ContactUs = () => {
                 placeholder="Add Heading"
                 value={info.heading}
                 onChange={handleChange}
+                autoComplete='off'
               />
             </div>
 
@@ -56,13 +61,13 @@ const ContactUs = () => {
             </div>
 
             <div className={styles.submitButton}>
-              <button >Submit</button>
+              <button>Submit</button>
             </div>
-           
         </div>
       </div>
     </>
   );
+
 };
 
-export default ContactUs;
+export default contactUs;

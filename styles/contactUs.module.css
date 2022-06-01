@@ -1,27 +1,22 @@
 
 
 .contactUs{
-   
-   
-    background:white;
+    /* background:white; */
     /* display: flex; */
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column;
+    justify-content: center; */
     align-items: center;
     /* height: 100vh; */
+    /* border: 2px solid black; */
+    margin:auto ;
     font-family: "Space Grotesk", sans-serif;
-
-
-
+    margin-bottom: 10px;
 }
 
-/* .contactUs div{
-    border:  2px solid black;
-} */
 
 .headingBlock input{
     font-family: "Space Grotesk", sans-serif;
-
+    outline: none;
     width: 500px;
 }
 
@@ -41,6 +36,7 @@
 .descriptionBlock textarea{
     vertical-align: top;
     font-family: "Space Grotesk", sans-serif;
+    outline: none;
     
     width: 500px; 
     resize:none;
@@ -50,7 +46,7 @@
 
 .contactUs button{
     width: 500px;
-    background-color: rgb(122, 191, 18);
+    background-image: linear-gradient(90deg, #00e7e7, #8946df);
     text-align: center;
     font-family: "Space Grotesk", sans-serif;
     
@@ -64,7 +60,7 @@
     justify-content: center; 
     align-items: center;
     height: 80px;
-    background:rgb(122, 191, 18);
+    /* background:rgb(122, 191, 18); */
     position: relative;
     font-family: "Space Grotesk", sans-serif;
 
@@ -76,13 +72,21 @@
     color: white;
     cursor: pointer;
     font-family: "Space Grotesk", sans-serif;
+    font-size: 45px;
 
 }
 
 
 .contactInfo{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-align: center;
     font-family: "Space Grotesk", sans-serif;
+    background: #282162;
+    color: white;
+    padding: 10px 10px;
+    width: 900px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
 }

@@ -1,12 +1,10 @@
 import React from "react";
-
 import PieChart from "./PieChart";
 import Style from "./overview.module.css";
 
-function Overview() {
+const Overview = () => {
   const fullTime = 5;
   const contractBased = 10;
-
   const male = 4;
   const female = 6;
   return (
@@ -21,8 +19,8 @@ function Overview() {
           <div className={Style.timeBased}>
             <PieChart
               fullTime={fullTime}
-              // name1={"FullTime"}
-              // name2={"ContractBased"}
+              name1={"FullTime"}
+              name2={"ContractBased"}
               contractBased={contractBased}
             />
           </div>
@@ -30,8 +28,8 @@ function Overview() {
           <div className={Style.genderBased}>
             <PieChart
               fullTime={male}
-              // name1={"Male Employee"}
-              // name2={"Female Employee"}
+              name1={"Male Employee"}
+              name2={"Female Employee"}
               contractBased={female}
             />
           </div>
@@ -39,8 +37,8 @@ function Overview() {
           <div className={Style.genderBased}>
             <PieChart
               fullTime={male}
-              // name1={"Male Employee"}
-              // name2={"Female Employee"}
+              name1={"Male Employee"}
+              name2={"Female Employee"}
               contractBased={female}
             />
           </div>

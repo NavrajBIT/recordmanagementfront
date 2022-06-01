@@ -1,16 +1,9 @@
-import { useEffect, useState }  from 'react';
- 
+import { useEffect, useState } from 'react';
 import {Chart as ChartJs, Tooltip, Title, ArcElement, Legend} from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
-import React from 'react';
-
 ChartJs.register(
   Tooltip, Title, ArcElement, Legend
 );
-
-
-  
-ChartJs.defaults.font.size = 16;
 
 
 const data = {
@@ -18,12 +11,14 @@ const data = {
         data: [10, 20, 30],
         backgroundColor:[
           'red',
-          'blue',
-          
+          'blue', 
         ]
-        
     },
-  ]
+  ],
+  // These labels appear in the legend and in the tooltips when hovering different arcs
+  labels: [
+      'Red',
+  ], 
   };
 
 
@@ -36,8 +31,11 @@ function PieChart(props){
               'blue'
             ]
         },
-      ]
-     
+      ],
+      // labels: [
+      //     props.name1,
+      //     props.name2
+      // ], 
     });
 
     return (
@@ -49,4 +47,4 @@ function PieChart(props){
 
 }
 
-export default PieChart;  
+export default PieChart;

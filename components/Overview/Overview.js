@@ -17,12 +17,12 @@ function Overview() {
         </div>
 
         <h2>Total Employee : 20</h2>
-        {/* <div className={Style.totalEmployee}>
+        <div className={Style.totalEmployee}>
           <div className={Style.timeBased}>
             <PieChart
               fullTime={fullTime}
-              name1="FullTime"
-              name2="ContractBased"
+              // name1={"FullTime"}
+              // name2={"ContractBased"}
               contractBased={contractBased}
             />
           </div>
@@ -30,8 +30,8 @@ function Overview() {
           <div className={Style.genderBased}>
             <PieChart
               fullTime={male}
-              name1="Male Employee"
-              name2="Female Employee"
+              // name1={"Male Employee"}
+              // name2={"Female Employee"}
               contractBased={female}
             />
           </div>
@@ -39,12 +39,12 @@ function Overview() {
           <div className={Style.genderBased}>
             <PieChart
               fullTime={male}
-              name1="Male Employee"
-              name2="Female Employee"
+              // name1={"Male Employee"}
+              // name2={"Female Employee"}
               contractBased={female}
             />
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );

@@ -6,20 +6,6 @@ ChartJs.register(
 );
 
 
-const data = {
-    datasets: [{
-        data: [10, 20, 30],
-        backgroundColor:[
-          'red',
-          'blue', 
-        ]
-    },
-  ],
-  // These labels appear in the legend and in the tooltips when hovering different arcs
-  labels: [
-      'Red',
-  ], 
-  };
 
 
 function PieChart(props){
@@ -27,8 +13,8 @@ function PieChart(props){
         datasets: [{
             data: [props.fullTime , props.contractBased],
             backgroundColor:[
-              'red',
-              'blue'
+              'blue',
+              ' #00e7e7'
             ]
         },
       ],

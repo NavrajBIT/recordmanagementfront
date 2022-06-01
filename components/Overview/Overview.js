@@ -3,49 +3,63 @@ import PieChart from "./PieChart";
 import Style from "./overview.module.css";
 
 const Overview = () => {
-  const fullTime = 5;
+  const fullTime = 15;
   const contractBased = 10;
-  const male = 4;
-  const female = 6;
+  const male = 34;
+  const female = 16;
   return (
     <>
+    <div className={Style.background}>
+
       <div className={Style.overview}>
         <div className="heading">
-          <h2>DashBoard</h2>
+          <h2>DASHBOARD</h2>
         </div>
+        
 
-        <h2>Total Employee : 20</h2>
+        <h2>TOTAL EMPLOYEE : 20</h2>
+        <hr />
+
         <div className={Style.totalEmployee}>
           <div className={Style.timeBased}>
-            <PieChart
-              fullTime={fullTime}
-              name1={"FullTime"}
-              name2={"ContractBased"}
-              contractBased={contractBased}
-            />
+            <div className={Style.lables}>
+              <h3>Full Time</h3>
+              <h3>Part Time</h3>
+            </div>
+
+            <div className={Style.pie}>
+              <PieChart fullTime={fullTime} contractBased={contractBased} />
+            </div>
           </div>
 
           <div className={Style.genderBased}>
-            <PieChart
-              fullTime={male}
-              name1={"Male Employee"}
-              name2={"Female Employee"}
-              contractBased={female}
-            />
+            <div className={Style.lables}>
+              <h3>Male Employee</h3>
+              <h3>Female Employee</h3>
+            </div>
+            <div className={Style.pie}>
+              <PieChart fullTime={male} contractBased={female} />
+            </div>
           </div>
 
           <div className={Style.genderBased}>
-            <PieChart
-              fullTime={male}
-              name1={"Male Employee"}
-              name2={"Female Employee"}
-              contractBased={female}
-            />
+            <div className={Style.lables}>
+              <h3>Male Employee</h3>
+              <h3>Female Employee</h3>
+            </div>
+            <div className={Style.pie}>
+              <PieChart fullTime={male} contractBased={female} />
+            </div>
           </div>
+
+
         </div>
+
+        
       </div>
+    </div>
     </>
   );
-}
+};
 
 export default Overview;

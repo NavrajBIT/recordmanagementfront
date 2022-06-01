@@ -2,6 +2,8 @@ import { useState } from "react";
 import styles from "../../../styles/contactUs.module.css";
 
 const ContactUs = () => {
+  // New
+  // code
   const [info, setinfo] = useState({
     heading: "",
     description: "",

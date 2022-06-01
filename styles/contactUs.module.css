@@ -54,7 +54,8 @@
 }
 .heading h2{
     position: absolute;
-    bottom: 0px;
+    bottom: 16px;
+    left: 35%;
     color: white;
     cursor: pointer;
     font-family: "Space Grotesk", sans-serif;

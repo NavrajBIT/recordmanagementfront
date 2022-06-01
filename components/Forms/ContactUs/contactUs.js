@@ -20,10 +20,10 @@ const ContactUs = () => {
     <>
       <div className={styles.contactUs}>
         
-        <div className={styles.heading}>
-          <h2>Contact Us</h2>
-        </div>
         <div className={styles.contactInfo}>
+            <div className={styles.heading}>
+                <h2>Contact Us</h2>
+            </div>
             <div className={styles.headingBlock}>
               <label htmlFor="heading">Heading</label>
               <input

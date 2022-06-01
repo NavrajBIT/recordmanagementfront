@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+
 import styles from "../../../styles/contactUs.module.css";
 // import Navbar from "./Navbar";
+
 const ContactUs = () => {
+  // New
+  // code
   const [info, setinfo] = useState({
     heading: "",
     description: "",
@@ -11,12 +15,11 @@ const ContactUs = () => {
     const value = e.target.value;
     setinfo({ ...info, [name]: value });
   };
+
   return (
     <>
       <div className={styles.contactUs}>
-        {/* <div className="navbar">
-          <Navbar/>
-        </div> */}
+        
         <div className={styles.heading}>
           <h2>Contact Us</h2>
         </div>
@@ -57,5 +60,6 @@ const ContactUs = () => {
       </div>
     </>
   );
+//change
 };
 export default ContactUs;

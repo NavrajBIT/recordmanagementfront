@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import styles from "../../../styles/contactUs.module.css";
 // import Navbar from "./Navbar";
 
-const contactUs = () => {
+const ContactUs = () => {
+  // New
+  // code
   const [info, setinfo] = useState({
     heading: "",
     description: "",
@@ -19,9 +21,7 @@ const contactUs = () => {
   return (
     <>
       <div className={styles.contactUs}>
-        {/* <div className="navbar">
-          <Navbar/>
-        </div> */}
+        
         <div className={styles.heading}>
           <h2>Contact Us</h2>
         </div>
@@ -70,4 +70,4 @@ const contactUs = () => {
 //change
 };
 
-export default contactUs;
+export default ContactUs;

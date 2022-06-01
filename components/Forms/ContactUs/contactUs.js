@@ -10,11 +10,9 @@ const ContactUs = () => {
     heading: "",
     description: "",
   });
-
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-
     setinfo({ ...info, [name]: value });
   };
 
@@ -25,9 +23,7 @@ const ContactUs = () => {
         <div className={styles.heading}>
           <h2>Contact Us</h2>
         </div>
-
         <div className={styles.contactInfo}>
-          
             <div className={styles.headingBlock}>
               <label htmlFor="heading">Heading</label>
               <input
@@ -40,7 +36,6 @@ const ContactUs = () => {
                 autoComplete='off'
               />
             </div>
-
             <div className={styles.descriptionBlock}>
               <label className={styles.descLabel} htmlFor="description">
                 Description
@@ -55,11 +50,9 @@ const ContactUs = () => {
                 onChange={handleChange}
               ></textarea>
             </div>
-
             <div className={styles.browseButton}>
               <button>Browse</button>
             </div>
-
             <div className={styles.submitButton}>
               <button>Submit</button>
             </div>
@@ -69,5 +62,4 @@ const ContactUs = () => {
   );
 //change
 };
-
 export default ContactUs;

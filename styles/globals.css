@@ -168,3 +168,8 @@ a {
   width: 100vw;
   height: 100px;
 }
+
+th {
+  padding-bottom: 2rem !important;
+  border: none;
+}

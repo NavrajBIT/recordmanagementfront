@@ -169,7 +169,7 @@ a {
   height: 100px;
 }
 
-th {
-  padding-bottom: 2rem !important;
+table tr th, table tr td {
+  padding: 0.5rem 1rem !important;
   border: none;
 }

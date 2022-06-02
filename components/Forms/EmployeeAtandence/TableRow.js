@@ -1,5 +1,5 @@
 import styles from './EmployeeAtandence.module.css';
-const TableRow = ({sno, unit, site, empcode, name}) => {
+const TableRow = ({sno, unit, site, empcode, name, days}) => {
   return (
     <tr className={styles.tdata}>
       <td>{sno + 1}</td> {/* s.no */}
@@ -7,36 +7,16 @@ const TableRow = ({sno, unit, site, empcode, name}) => {
       <td>{site}</td> {/* site */}
       <td>{empcode}</td> {/* emp code */}
       <td>{name}</td> {/* name */}
-      <td>
-        <select name="pora">
-          <option value="absent">A</option>
-          <option value="present">P</option>
-        </select>
-      </td>
-      <td>
-        <select name="pora">
-          <option value="absent">A</option>
-          <option value="present">P</option>
-        </select>
-      </td>
-      <td>
-        <select name="pora">
-          <option value="absent">A</option>
-          <option value="present">P</option>
-        </select>
-      </td>
-      <td>
-        <select name="pora">
-          <option value="absent">A</option>
-          <option value="present">P</option>
-        </select>
-      </td>
-      <td>
-        <select name="pora">
-          <option value="absent">A</option>
-          <option value="present">P</option>
-        </select>
-      </td>
+      {[...Array(days)].map((date, index) => {
+        return(
+          <td key={index}>
+            <select name="pora">
+              <option value="absent">A</option>
+              <option value="present">P</option>
+            </select>
+          </td>
+        )
+      })}
     </tr>
   );
 };

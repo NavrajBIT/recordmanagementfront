@@ -8,29 +8,23 @@ ChartJs.register(
 
 
 
-function PieChart(props){
+function PieChart({value1, value2, value3}){
     const [data, setData] = useState({
         datasets: [{
-            data: [props.fullTime , props.contractBased],
+            data: [value1 , value2, value3],
             backgroundColor:[
-              'blue',
-              ' #00e7e7'
+              '#1f2580',
+              '#3d70a8',
+              '#0b8de3'
             ]
         },
       ],
-      // labels: [
-      //     props.name1,
-      //     props.name2
-      // ], 
     });
-
     return (
-        <>
-          <Doughnut data={data}/>
-        </>
-        
-      );
-
+      <>
+        <Doughnut data={data}/>
+      </>
+    );
 }
 
 export default PieChart;

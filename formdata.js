@@ -1,3 +1,4 @@
+import image from "./components/employeeData/image.jpg"
 export const addEmployeeFormData = [
   {
     label: "Site Name",
@@ -182,3 +183,43 @@ export const addEmployeeFormData = [
     id: "Qualification26",
   },
 ];
+
+export const dummyData = [
+  {
+    name:"Anubhav Soni",
+    dob:"234",
+    gender:"male",
+    address :"yahoo ",
+    designation : "intern",
+    mobileNumber:"23423904234",
+    siteName:"usa",
+    depot:"software",
+    fatherName : "anubhav",
+    adharnumber:"234234234",
+    category:"genral",
+    doj:"234234",
+    offeredSalary:"5L",
+    hra:"4L",
+    accountNumber:"234234234",
+    ipfs:"34523423",
+    image : {image}
+  },
+  {
+    name:"Anubhav Soni",
+    dob:"234",
+    gender:"male",
+    address :"yahoo ",
+    designation : "intern",
+    siteName:"usa",
+    depot:"software",
+    fatherName : "anubhav",
+    adharnumber:"234234234",
+    category:"genral",
+    doj:"234234",
+    offeredSalary:"5L",
+    hra:"4L",
+    accountNumber:"234234234",
+    ipfs:"34523423"
+  }
+
+]

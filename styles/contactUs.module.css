@@ -1,35 +1,27 @@
 .contactUs{
-    /* background:white; */
-    /* display: flex; */
-    /* flex-direction: column;
-    justify-content: center; */
     align-items: center;
-    /* height: 100vh; */
-    /* border: 2px solid black; */
     margin:auto ;
     font-family: "Space Grotesk", sans-serif;
     margin-bottom: 10px;
 }
-
-
+.headingBlock, .descriptionBlock{
+    display: flex;
+    flex-direction: column;
+}
 .headingBlock input{
     font-family: "Space Grotesk", sans-serif;
     outline: none;
     width: 500px;
 }
 .contactUs label{
-    margin: 10px 50px;
     display: inline-block;
-    width: 150px;
-    text-align: right;
+    text-align: left;
     font-family: "Space Grotesk", sans-serif;
-    /* border: 2px solid black; */
 }
 .descriptionBlock textarea{
     vertical-align: top;
     font-family: "Space Grotesk", sans-serif;
     outline: none;
-    
     width: 500px; 
     resize:none;
     display: inline-block;
@@ -43,48 +35,36 @@
     font-weight: 600;
     color: white;
 }
-.heading{
+.contactInfo h2{
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: white;
+}
+.contactInfo{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80px;
-    /* background:rgb(122, 191, 18); */
-    position: relative;
-    font-family: "Space Grotesk", sans-serif;
-}
-.heading h2{
-    position: absolute;
-    bottom: 20px;
-    left: 40%;
-    color: white;
-    cursor: pointer;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 45px;
-
-}
-
-
-
-.contactInfo{
-    /* margin-top: 20px; */
     text-align: center;
     font-family: "Space Grotesk", sans-serif;
     background: #282162;
     color: white;
-    /* padding:10px 20px; */
     padding-top: 20px;
-    padding-right: 90px;
-    /* width: 900px; */
     margin: auto;
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-
-
 .background{
     width: 100%;
     padding: 20px;
     text-align: center;
     background-image: linear-gradient( 40deg, rgba(26, 214, 255, 0.8), #121543 15%, rgba(137, 70, 223, 0.8) );
-    
+}
+.buttonSection{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.buttonSection button{
+    width:max-content;
+    margin: 0 10px 0 0;
 }

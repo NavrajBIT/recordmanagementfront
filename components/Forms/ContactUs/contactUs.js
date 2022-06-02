@@ -11,7 +11,7 @@ const ContactUs = () => {
     description: "",
   });
   const handleChange = (e) => {
-    const name = e.target.name;
+    const name = e.target.name; 
     const value = e.target.value;
     setinfo({ ...info, [name]: value });
   };
@@ -19,13 +19,9 @@ const ContactUs = () => {
   return (
     <>
     <div className={styles.background}>
-
       <div className={styles.contactUs}>
-        
         <div className={styles.contactInfo}>
-            <div className={styles.heading}>
-                <h2>Contact Us</h2>
-            </div>
+            <h2>Contact Us</h2>
             <div className={styles.headingBlock}>
               <label htmlFor="heading">Heading</label>
               <input
@@ -52,10 +48,8 @@ const ContactUs = () => {
                 onChange={handleChange}
               ></textarea>
             </div>
-            <div className={styles.browseButton}>
+            <div className={styles.buttonSection}>
               <button>Browse</button>
-            </div>
-            <div className={styles.submitButton}>
               <button>Submit</button>
             </div>
         </div>

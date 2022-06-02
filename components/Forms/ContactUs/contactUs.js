@@ -18,6 +18,8 @@ const ContactUs = () => {
 
   return (
     <>
+    <div className={styles.background}>
+
       <div className={styles.contactUs}>
         
         <div className={styles.contactInfo}>
@@ -58,6 +60,7 @@ const ContactUs = () => {
             </div>
         </div>
       </div>
+    </div>
     </>
   );
 //change

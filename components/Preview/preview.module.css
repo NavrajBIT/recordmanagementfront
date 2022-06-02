@@ -1,0 +1,47 @@
+.background{
+    /* background: white; */
+    width: 100%;
+    background-image: linear-gradient( 40deg, rgba(26, 214, 255, 0.8), #121543 15%, rgba(137, 70, 223, 0.8) );
+    /* height: 100%; */
+}
+
+.heading{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+
+.heading h2{
+    /* border: 2px solid black; */
+    margin-top: 30px;
+    margin-left: 20px;
+
+}
+
+.heading button{
+    /* padding: 10px 10px; */
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+
+.box{
+    border: 2px solid black;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+    background:white ;
+    border-radius: 20px;
+}

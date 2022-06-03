@@ -60,12 +60,16 @@
 }
 
 .confirmButton button:hover{
-    color: blue;
+    color: rgb(225, 225, 234);
 }
 
 .inputFields div{
     /* border: 2px solid black; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* align-items: center; */
+}
+
+.inputFields div span{
+    margin-right: 50px;
 }
